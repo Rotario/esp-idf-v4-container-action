@@ -4,6 +4,7 @@ declare -i res
 
 . ${IDF_PATH}/export.sh
 ls -al
+git describe
 idf.py build
 res=$?
 
