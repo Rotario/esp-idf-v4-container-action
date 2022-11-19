@@ -3,8 +3,7 @@
 declare -i res
 
 . ${IDF_PATH}/export.sh
-ls -al
-git describe
+git config --global --add safe.directory /github/workspace
 idf.py build
 res=$?
 
