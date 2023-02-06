@@ -4,7 +4,10 @@ description: 'GitHub Action to build your ESP32 code using the official Docker c
 branding:
   icon: check
   color: purple
-
+inputs:
+  idf-target:
+    description: 'IDF_TARGET, one of esp32, esp32s3 etc'
+    required: true
 outputs:
   result:
     description: 'The result code'
