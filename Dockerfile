@@ -1,4 +1,4 @@
-FROM espressif/idf:release-v4.4
+FROM espressif/idf:release-v5.0
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y locales \
     && locale-gen en_US.UTF-8 \
